@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 :root {
     --primary-bs-color: #139bfd;
     --bg-bs-color: #010a10;
@@ -9,23 +10,144 @@
     --font-bs-discription: 'Poppins';
     --font-size: 16px;
 }
+
 body {
     background: var(--bg-bs-color) !important;
-    font-family: var(--font-bs-title);
     font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: var(--font-bs-title);
+}
+
+span {
     font-family: var(--font-bs-discription);
 }
+
 a {
     text-decoration: none;
 }
+
 ul,
 ol {
     list-style: none;
 }
-.pt{
-    margin-top:100px;
+
+.pt {
+    margin-top: 100px;
 }
-.py{
+
+.py {
     margin-bottom: 100px;
 }
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+.icons ul li {
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.current a {
+    color: #139bfd;
+    text-decoration: none;
+}
+
+.name img {
+    height: 45px;
+    max-width: 45px;
+    animation: skew-hi 1s linear infinite;
+}
+
+.name span {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+
+@keyframes skew-hi {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0eg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.men-img img {
+    width: 663px;
+    height: 673px;
+    position: absolute;
+    top: 14%;
+    left: 32%;
+}
+
+.shape-img h2 {
+    position: absolute;
+    color: white;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 110px;
+    font-weight: 700;
+    z-index: 3;
+}
+.banner-section {
+    position: relative;
+    min-height: 100vh;
+}
+.shape-img span {
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+    font-weight: 600;
+    -webkit-text-stroke-width: 1px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    stroke: #fff;
+    -webkit-text-fill-color: transparent;
+}
+.title span{
+    background: linear-gradient(to right , #139bfd,#13e0fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card-item{
+    background-color: #06131b;  
+    height:333px;
+    width:616px;
+    border-radius: 30px;
     
+}
