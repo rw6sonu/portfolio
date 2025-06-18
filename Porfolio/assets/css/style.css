@@ -16,6 +16,12 @@ body {
     font-size: var(--font-size);
 }
 
+.gray {
+    color: #bebebe;
+}
+.blue{
+    color:#139bfd;
+}
 h1,
 h2,
 h3,
@@ -105,28 +111,30 @@ nav ul li {
     height: 673px;
     position: absolute;
     top: 14%;
-    left: 32%;
+    left: 28%;
 }
 
 .shape-img h2 {
     position: absolute;
     color: white;
-    top: 58%;
+    top: 67%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 110px;
+    font-size: 77px;
     font-weight: 700;
     z-index: 3;
 }
+
 .banner-section {
     position: relative;
     min-height: 100vh;
 }
+
 .shape-img span {
     position: absolute;
     z-index: -1;
     top: 25%;
-    left: 50%;
+    left: 51%;
     transform: translateX(-50%);
     font-size: 100px;
     font-weight: 600;
@@ -136,18 +144,255 @@ nav ul li {
     stroke: #fff;
     -webkit-text-fill-color: transparent;
 }
-.title span{
-    background: linear-gradient(to right , #139bfd,#13e0fd);
+
+.title span {
+    background: linear-gradient(to right, #139bfd, #13e0fd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: var(--font-bs-title);
 }
-.card-item{
-    background-color: #06131b;  
-    height:333px;
-    width:616px;
+
+.card-item {
+    background-color: #06131b;
+    height: 333px;
+    width: 616px;
     border-radius: 30px;
-    
+
+}
+
+.logo-img {
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(315deg, #13fdfd 0%, #139bfd 100%);
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    min-width: 65px;
+    box-shadow: 0 2px 22px #13fdfd7d;
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.card-item:hover,
+.icon-reverse-wrapper:hover,.blog:hover {
+    border: 1px solid rgba(19, 155, 253, 0.5);
+}
+
+.about-img img {
+    width: 528px;
+    height: 599px;
+    border: 25px solid #06131b;
+    border-radius: 20px;
+}
+
+.about-us-card {
+    width: 286px;
+    height: 205px;
+    background-color: #06131b;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.icon-reverse-wrapper {
+    display: flex;
+    color: #d6d6d6;
+    background: transparent;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.502);
+    padding: 10px 24px;
+    width: 35%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.count h3 {
+    display: inline-block;
+}
+
+.count {
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+    width: 290px;
+    height: 154px;
+    background-color: #06131b;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0 0 rgba(20, 155, 252, 0.11);
+}
+
+.card-icon {
+    color: #d6d6d6;
+    font-size: 34px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 22px #13fdfd7d;
+}
+.card-icon img{
+        max-height: 32px;
+    filter: invert(1);
+}
+.blog{
+    border:1px solid rgba(128, 128, 128,0.2  );
+    width:242px;
+    height:312px;
+    border-radius: 10px;
+     background-color: #06131b;
+}
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title h2{
+    line-height: 1.4;
+}
+.resume{
+    padding:100px 40px !important;
+    background-color: #06131b;
+    border-radius: 20px;
+}
+.nav-item {
+    padding:5px;
+    background-color:#06131b;
+    border-radius:10px ;
+} 
+.nav-item a{
+    color:white;
+}
+.portfolio{
+    border:20px solid #06131b;
+    border-radius: 40px;
+    height:auto;
+}
+.portfolio img{
+    width:540px;
+    height:467px;
+     border-radius: 20px;
+     margin-bottom: 20px;
+}
+.tag-items a{
+    text-decoration: none;
+    border-radius: 500px;
+    border: 2px solid #0c1f2e;
+    color: #bebebe;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 15px;
+    transition:all 0.4s ease-in-out;
+}
+.tag-items ul li a:hover{
+    background-color: #167ac1;
+}
+.content .icon-reverse-wrapper1{
+        display: flex;
+    color: #d6d6d6;
+    background: transparent;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.502);
+    padding: 5px 10px;
+    width: 110%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 30px 30px 30px;
+}
+.content .icon-reverse-wrapper1:hover,.price-plan-card:hover{
+border: 1px solid rgba(19, 155, 253, 0.5);
+}
+.icon-reverse-wrapper2{
+        display: flex;
+    color: #d6d6d6;
+    background: transparent;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.502);
+    padding: 5px 10px;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 30px 30px 30px;
+}
+.price-plan-card{
+    width: auto !important;
+    height:auto !important;
+   background-color: #06131b;
+   border-radius: 20px;
+}
+.price-plan-card span{
+    font-family: var(--font-bs-title);
+}
+.chexk-box-item{
+    align-items: flex-start;
+    display: flex;
+   
+}
+.check-box-item .box-icon i{
+    color:#139bfd;
+}
+.check-box{
+     border-top:2px solid #0c1f2e;
+}
+.ft-icon i{
+  border: 1px solid #0c1f2e;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color:white;
+}
+.form-group input,.form-group textarea{
+        background: transparent;
+        width:315px;
+    height: auto;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #0c1f2e;
+}
+.tmp-btn{
+    margin-top: 50px;
+        padding: 0 30px;
+    background: #139bfd;
+    height: 60px;
+    line-height: 60px;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    border-radius: 50px;
+    border: 0 none;
+    outline: none;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    text-transform: capitalize;
+}
+.blog-card{
+    border:1px solid #081722;
+    width:405px;
+    height:517px;
+    border-radius: 20px;
+}
+.img-box img{
+     width: 403px;
+     border-radius: 20px;
 }
